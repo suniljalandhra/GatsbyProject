@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import {FaInstagram,FaLinkedin,FaEnvelope,FaGithub,FaTwitter} from "react-icons/fa"
 import Header from "./header"
 import "./layout.css"
 
@@ -25,23 +25,32 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}>
+        <main
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          flexGrow: 1,
         }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
         >
-          © {new Date().getFullYear()}, Built with
+          {children}</main>
+        <footer className = "footer">
+          <div className = "footer_social">
+          <a href = "https://twitter.com/suniljalandhra9" target="_blank"><FaTwitter/></a>
+          <a href = "https://www.instagram.com/su.nil8059/" target="_blank"><FaInstagram/></a>
+          <a href = "https://www.linkedin.com/in/sunil-jalandhra-587834147/" target="_blank"><FaLinkedin/></a>
+          <a href = "https://github.com/suniljalandhra" target="_blank"><FaGithub/></a>
+          <a href = "mailto:jalandhrasunil99@gmail.com" target="_blank"><FaEnvelope/></a>
+
+          </div>
+          <div className = "atribute">
+          © {new Date().getFullYear()}, Sunil Jalandhra
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </div>
+         
         </footer>
       </div>
     </>

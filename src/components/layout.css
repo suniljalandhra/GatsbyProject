@@ -1,7 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.header {
+  /* background-image: url("../images/wave-matrix-background-vector.jpg"); */
+  background-color: #0A192F;
+  min-height: 50vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_intro {
+  /* background: rgba(100,100,100, 0.5); */
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #08052c;
+}
+.headerContent {
+  margin: 0px;
+  
+}
+.lineHeader{
+  color: #8892B0;
+
+}
+.Name {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: bold;
+  color: #CCD6F6;
+
+}
+.FollowByName{
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: lighter;
+  color: #8892B0;
+}
+.header_intro h4,.techStack{
+  color: #64ffda;
+  font-weight: bolder;
+}
+
+/* Main Content Of page */
+.Projects{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+}
+.project-card{
+  width: 33.3%;
+  background: rgba(100,100,100, 0.3);
+  border-radius: 10px;
+  margin: 0 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 80px #0A192F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-card h2{
+  color: #CCD6F6;
+}
+.project-card a{
+  text-decoration: none;
+  color: #64ffda;
+}
+.link_project{
+  /* display: flex; */
+  justify-content: space-around;
+}
+.link_project a{
+  text-decoration: none;
+  background-size: 100% 200%;
+  background-position: 0px 0px;
+  transition: background-position 120ms,color 120ms;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50%-9px),
+    rgba(38,19,110,0.5)calc(50% - 9px),
+    rgba(38,19,110,0.5)100%
+  );
+
+}
+.link_project a:hover{
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50%-9px),
+    rgba(38,19,110,0.5)calc(50% - 9px),
+    rgba(38,19,110,0.5)100%
+  );
+  color: #f7f7f7;;
+  background-position: center center;
+}
+.text-center{
+  text-align: center;
+}
+/* footer content */
+.footer{
+  background-color: #0A192F;
+  color: #CCD6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+.footer a{
+  text-decoration: none;
+  color: #CCD6F6;
+
+}
+.footer_social{
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.atribute{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .Projects{
+    flex-direction: column;
+  }
+  .project-card{
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+body{
+  font-size: 16px;
+  font-family: 'Ubuntu Mono', monospace;
+    color: #1a1a1a;
+    background-color: #162f57;
+}
+
+/* DEFAULT STYLING BELOW  */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -10,7 +146,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -81,8 +217,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -260,8 +395,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -277,8 +411,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -294,8 +427,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -311,8 +443,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -328,8 +459,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
