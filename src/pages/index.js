@@ -24,7 +24,7 @@ const IndexPage = () => (
       </div>
       
     </header>
-    <h2  className = "text-center">Porjects</h2>
+    <h2  className = "text-center">Projects</h2>
     <section className="Projects">
       
       <div className = "project-card">
