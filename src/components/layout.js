@@ -12,6 +12,8 @@ import {FaInstagram,FaLinkedin,FaEnvelope,FaGithub,FaTwitter} from "react-icons/
 import Header from "./header"
 import "./layout.css"
 
+
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,18 +26,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-      }}>
-        <main
-        style={{
-          flexGrow: 1,
-        }}
-        >
+    <> 
+       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <main>
           {children}</main>
         <footer className = "footer">
           <div className = "footer_social">
@@ -52,7 +45,7 @@ const Layout = ({ children }) => {
           </div>
          
         </footer>
-      </div>
+      
     </>
   )
 }
