@@ -3,13 +3,17 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaTwitter, FaGithub, FaLinkedin,  FaEnvelope } from "react-icons/fa"
+import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 const Header = ({ siteTitle }) => (
   <header className="old">
-    <Container id="head" >
+    {/* <Container id="head" > */}
+    <div id="navbar_custom">
       <Navbar expand="md" variant="dark">
-        <Navbar.Brand href="/" id="logo">{siteTitle}</Navbar.Brand>
+        <polygon id="polygone">
+          <Navbar.Brand href="/" id="logo">{siteTitle}</Navbar.Brand>
+        </polygon>
+
         <Navbar.Toggle aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive" >
           <Nav as="ul" className="ml-auto">
@@ -25,13 +29,21 @@ const Header = ({ siteTitle }) => (
             <Nav.Item>
               <Link href="mailto:jalandhrasunil99@gmail.com" className="nav-link" activeClassName="active"><FaEnvelope /></Link>
             </Nav.Item>
+            <Nav.Item>
+              <div id="resume">
+                <Link to="https://drive.google.com/file/d/1HQ78U5kTPyDaoQJiqNxXLnEoEs9TKSxV/view?usp=sharing" target="_blank" className="cv" >Resume</Link>
+              </div>
+
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
 
 
       </Navbar>
 
-    </Container>
+    </div>
+
+    {/* </Container> */}
   </header>
 )
 

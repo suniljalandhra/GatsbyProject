@@ -2,9 +2,41 @@
 .old{
   background-color: #0A192F;
   font-family: 'Ubuntu Mono', monospace; 
+  font-size: xx-large;
 }
+#navbar_custom{
+  margin: 0 2rem;
+}
+#logo{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #64ffda;
+  margin: 0rem 1rem;
+  
+}
+#polygone{
+  border-style: dashed;
+  border-color: #64ffda;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+#resume{
+  border-style: solid;
+  border-color: #64ffda;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 170px;
+  max-height: 80px;
+}
+.cv{
+  color: #64ffda;
+  padding: 1rem 1rem;
+}
+
 .header {
-  /* background-image: url("../images/wave-matrix-background-vector.jpg"); */
+  /* background-image: url("..//wave-matrix-background-vector.jpg"); */
   background-color: #0A192F;
   /* min-height: 50vh; */
   margin: 0 2rem;
@@ -17,7 +49,7 @@
   /* background: rgba(100,100,100, 0.5); */
   background-color: #0A192F;
   padding: 1rem 2rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: #08052c;
   margin: 0 0rem;
   max-width: 100%;
