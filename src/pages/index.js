@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Typical from 'react-typical'
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -17,7 +18,20 @@ const IndexPage = () => (
       <div className="headerContent">
         <p className="Name">Sunil Jalandhra.</p>
         <p className="FollowByName">
-          I am a Software Engineer.
+          I am a Software{' '} 
+          
+          <Typical
+          loop={Infinity}
+          wrapper="b"
+          steps={[
+            'Developer',
+            1000,
+            'Engineer',
+            1000,
+            'Designer',
+            1000
+          ]}
+          />.
       </p>
         <p className="lineHeader">
           I am graduating from Indian Institute of Information Technology Una in 2021,I love to work with <span className="techStack">C++,Swift,Python,HTML,CSS,javaScript,Soidity</span>,When I am not coding you can find me travelling.
