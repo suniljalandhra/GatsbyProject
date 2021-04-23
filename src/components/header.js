@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <header className="old">
     {/* <Container id="head" > */}
     <div id="navbar_custom">
-      <Navbar expand="md" variant="dark">
+      <Navbar className="navpad" expand="md" variant="dark">
         <polygon id="polygone">
           <Navbar.Brand href="/" id="logo">{siteTitle}</Navbar.Brand>
         </polygon>

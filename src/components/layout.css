@@ -7,6 +7,9 @@
 #navbar_custom{
   margin: 0 2rem;
 }
+.navpad{
+  padding: 0.5rem 0rem;
+}
 #logo{
   font-family: 'Ubuntu Mono', monospace;
   font-size: xx-large;
